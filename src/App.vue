@@ -74,7 +74,7 @@ const getGridClass = (index : number) => {
         >
           <img 
             :src="getImageSrc(post.img)"
-            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 ease-in group-hover:scale-110"
             loading="lazy"
           />
           <div
@@ -94,7 +94,6 @@ const getGridClass = (index : number) => {
               {{ post.textPreview }}
             </span> 
           </div>
-          
         </a>
       </div>
     </div>
