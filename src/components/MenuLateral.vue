@@ -13,7 +13,6 @@ const handleActiveMenu = () => {
   menu?.classList.toggle("right-0");
   menu?.classList.toggle("lg:right-full");
 };
-
 </script>
 
 <template>
@@ -22,14 +21,17 @@ const handleActiveMenu = () => {
     id="menu-full"
   >
     <div class="lg:px-44 py-24 flex flex-col gap-12 w-3/4">
+      <router-link to="/">
+        <span
+          class="text-[#C1C1C1] font-primary lg:text-6xl font-bold cursor-pointer transition-all ease-in delay-50 hover:text-primary"
+        >HOME
+        </span>
+      </router-link>
       <span
         class="text-[#C1C1C1] font-primary lg:text-6xl font-bold cursor-pointer transition-all ease-in delay-50 hover:text-primary"
-        >HOME</span
       >
-      <span
-        class="text-[#C1C1C1] font-primary lg:text-6xl font-bold cursor-pointer transition-all ease-in delay-50 hover:text-primary"
-        >BLOG</span
-      >
+        BLOG
+      </span>  
       <span
         class="text-[#C1C1C1] font-primary lg:text-6xl font-bold cursor-pointer transition-all ease-in delay-50 hover:text-primary"
         >PORTFOLIO</span
@@ -44,10 +46,13 @@ const handleActiveMenu = () => {
       >
     </div>
     <div class="lg:px-44 py-24">
-        <label class="hover:text-primary hover:fill-primary transition-all text-black flex items-center cursor-pointer gap-2" @click="handleActiveMenu">
-            <CloseIcon />
-            <span class="font-light font-secondary text-md">CLOSE</span>            
-        </label>
+      <label
+        class="hover:text-primary hover:fill-primary transition-all text-black flex items-center cursor-pointer gap-2"
+        @click="handleActiveMenu"
+      >
+        <CloseIcon />
+        <span class="font-light font-secondary text-md">CLOSE</span>
+      </label>
     </div>
   </div>
   <div
