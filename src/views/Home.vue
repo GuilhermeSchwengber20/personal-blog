@@ -2,6 +2,7 @@
 import { onMounted, ref } from "vue";
 import { useStore } from "vuex";
 import CardHeaderHome from "@/components/CardHeaderHome.vue";
+// import PostCard from "@/components/PostCard.vue";
 
 import { useRouter } from "vue-router";
 
@@ -39,6 +40,7 @@ const navigateToPostDetails = ( index : number) => {
     class="bg-gradient-to-b from-black to-background lg:h-auto lg:w-full lg:px-28 lg:py-20"
   >
     <div class="grid lg:grid-cols-2 gap-10 w-full">
+      <!-- <PostCard /> -->
       <span
         v-for="(post, index) in Posts"
         :key="index"
