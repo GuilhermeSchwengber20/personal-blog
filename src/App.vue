@@ -12,6 +12,10 @@ import Navigation from "@/components/Navigation.vue";
 <style scoped>
 </style>
 
-<!-- LIMITAR O TANTO DE POST QUE VAI MOSTRAR NA PAGINA HOME -->
-<!-- OTIMIZAR POSTS QUE APARECE NA HOME -->
+<!-- OTIMIZAR POSTS QUE APARECE NA HOME
+(CACHE - OK) 
+()
+-->
 <!-- BUSCAR ESTRATEGIA DE OTIMIZAÇÃO DE DESEMPENHO -->
+
+<!-- IMPLEMENTAR ESLINT -->

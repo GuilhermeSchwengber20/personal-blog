@@ -1,6 +1,6 @@
 <template>
     <div class="bg-gradient-to-b from-black to-background lg:h-auto lg:w-full lg:pl-24 lg:pr-8 lg:py-5 flex flex-col">
-        <img :src="post.urlToImage" class="w-full h-96 rounded-md object-cover"/>
+        <img :src="post.urlToImage" class="w-full h-96 rounded-md object-cover" loading="lazy"/>
         <div class="flex flex-col justify-start">
             <h2 class="font-primary text-2xl uppercase font-bold text-white lg:py-6 lg:px-32">
                 {{ post.title }}
